@@ -124,8 +124,8 @@ console.log(test()); //10 반환
 function test(){
     return 10;
 }
-
-///////////////////////////////////////
+```
+```javascript
 function sum(num1,num2){
     return num1+num2;
 }
