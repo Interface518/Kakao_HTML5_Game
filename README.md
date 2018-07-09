@@ -160,7 +160,37 @@ console.log("pi is "+3.14); //"pi is 3.14"
 console.log(3.14+" is pi"); //"3.14 is pi"
 ```
 
+```javascript
+var str = "abcdeabcde";
 
+str.charAt(0);  //"a"
+str.charAt(9);  //"e"
+str.charAt(10); //""
+
+str[0];         //"a"
+str[9];         //"e"
+str[10];        //undefined
+```
+
+```javascript
+var str = "abcdeabcde";
+
+str.substring(2,4); //==str[2:4] >> "cd"
+str.substring(2);   //==str[2:]  >> "cdeabcde"
+
+str.substr(2,4);    //==str[2:2+4] >> "cdea"
+str.substr(2);      //==str[2:]    >> "cdeabcde"
+```
+
+```javascript
+var str = "abcdeabcde";
+
+str.indexOf("bc"); //1
+str.indexOf("e");  //4  
+
+str.lastIndexOf("bc"); //6
+str.lastIndexOf("e");  //9
+```
 
 
 
