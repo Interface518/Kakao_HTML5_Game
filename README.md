@@ -162,6 +162,7 @@ console.log(3.14+" is pi"); //"3.14 is pi"
 
 ```javascript
 var str = "abcdeabcde";
+//해당 순서에 있는 문자 반환
 
 str.charAt(0);  //"a"
 str.charAt(9);  //"e"
@@ -174,6 +175,7 @@ str[10];        //undefined
 
 ```javascript
 var str = "abcdeabcde";
+//해당 서브스트링 반환
 
 str.substring(2,4); //==str[2:4] >> "cd"
 str.substring(2);   //==str[2:]  >> "cdeabcde"
@@ -184,10 +186,13 @@ str.substr(2);      //==str[2:]    >> "cdeabcde"
 
 ```javascript
 var str = "abcdeabcde";
+//해당 서브스트링의 순서 값 반환
 
+//서브스트링이 나오는 가장 첫번째
 str.indexOf("bc"); //1
 str.indexOf("e");  //4  
 
+//서브스트링이 나오는 가장 마지막
 str.lastIndexOf("bc"); //6
 str.lastIndexOf("e");  //9
 ```
