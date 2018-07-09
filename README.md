@@ -119,30 +119,45 @@ console.log(Math.random()); //0~1사이의 난수
 
 #### 함수
 ```javascript
-console.log(test());
-
+console.log(test()); //10 반환
 /*함수 정의*/
 function test(){
     return 10;
 }
+
+///////////////////////////////////////
+function sum(num1,num2){
+    return num1+num2;
+}
+
+/*콘솔 창에서
+sum(1,2); >> 3 반환 */
+
 ```
 
 
 #### 문자열
 ```javascript
 var str = "Hello";
-console.log(str.length);
-console.log(str["length"]);
+
+console.log(str.length);    //5 >> str의 크기
+console.log(str["length"]); //5 >> str의 크기
 
 var str2 = " World"
-var str3 = str.concat(str2);
-console.log(str3)
+var str3 = str.concat(str2); //str3 = str+str2
+console.log(str3);           //"Hello World"
 
-var str4 = "Hello".concat(str2).concat("!")
-console.log(str4)
+var str4 = "Hello".concat(str2).concat("!");
+//str4 = "Hello"+str2+"!"
+console.log(str4);          //"Hello World!"
 
-console.log(str + str2)
-console.log(str + str2 + "!")
+/*덧셈 연산자로도 가능*/
+console.log(str + str2);
+console.log(str + str2 + "!");
+
+/*수 가능*/
+console.log("pi is "+3.14); //"pi is 3.14"
+console.log(3.14+" is pi"); //"3.14 is pi"
 ```
 
 
